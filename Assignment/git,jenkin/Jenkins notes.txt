@@ -1,0 +1,29 @@
+What is Jenkins?
+Jenkins is a CI/CD automation tool.
+CI/CD: Continuous Integration and Continuous Delivery.
+It is a java web application (jenkins.jar)
+
+In Jenkins, Job is the basic building block.
+A job consists of set of steps to be followed to build,run and deploy your application.
+
+
+Deploy to Container:
+1. Create a Web Application and push it on to the github.- done
+2. provide access to deploy war from jenkins to tomcat.
+   conf/tomcat-users.xml 
+   
+   <tomcat-users>
+	<role rolename="manager-gui"/>
+	<role rolename="manager-script"/>
+
+	<user username="admin" password="admin" roles="manager-gui,manager-script"/>
+
+   </tomcat-users>
+
+   change the http port of tomcat:
+     conf/server.xml
+
+http://localhost:9090/first-web-app
+
+
+3. Create a job in jenkins to deploy war to tomcat.

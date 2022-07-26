@@ -1,0 +1,145 @@
+DevOps:
+is a culture.
+This culture is being followed by most of the software organizations.
+Before DevOps, the development team and operations team used to work in silos.
+
+SDLC: Software development Life Cycle.
+Phases in SDLC:
+1. Requirement Analysis,Plan and Design
+2. Coding
+3. Testing
+4. Integration
+5. Delivery(Deployment)
+6. Maintenance
+Waterfall Model:
+Req Analysis->Design->Coding->Testing->Integration->Deployment->Maintenance
+  Client 
+SRS Software Requirement Specification.
+1. No flexibility to change requirement/design.
+2. Delay in one phase leads to delay in overall deployment time.
+3. These delays incurs financial overheads.
+
+DevOps LifeCycle:
+1. Plan
+2. Code : managed by SCM(Source Code Management Tool)
+3. Build
+4. Test
+5. Release
+6. Deploy 
+7. Operate
+8. Monitor
+
+DevOps brings devlopment team and operations team closer and make them work together and in sync.
+Entire lifecycle is a continuous process.
+There are several tools available which automates the life cycle process and make it work on continuous basis.
+
+What is DevOps?
+It's not a technology or tool.
+It is a culture which is followed in software development process.
+It reduces the operation cycle time.
+Radpid development.
+It can also reduces the deployment failures.
+Establish proper communication between teams and make them productive.
+Feedback is immediately provided to the developers.
+
+
+
+
+
+
+
+
+
+
+
+Git:
+
+Central/Remote repository: In order create central repository, you need to create guthub account and perform other tasks.
+
+Local Repository: In order to create local repository, we need install git tool and use command line to run git commands to perform other task.
+
+IDEs like eclipse,VS code can also be used to perform git operations.
+
+1. Create and Initialize the git repository.
+https://github.com/Simant-Git/repo-919-920.git
+When you create a local repository, it will create a folder in your machine on the provided location and initialize that folder as git folder by create a hidden .git folder.
+
+
+2. Git has a concept of branching.
+
+3. Create a file HelloWOrld.java, which will be by default added in the "main" branch.
+4. we need to commit the changes in the repository with a message.
+
+-------------
+create and initialize git.           
+git init
+git add : to add files in staging area.
+git commit: to commit changes in local repository.
+git push: to push changes from local repository to remote repository.
+
+
+git clone: when you want to pull fresh copy from git hub, you need to clone the repository.
+
+git pull: is to pull changes from server to local repository and to working directory.
+Branching:
+git branch br1:
+create a new branch
+get checkout : to switch to a branch
+
+git merge:
+br1--->master
+in order to merge br1(sq) to master, you need to be in the destination branch(master)
+
+---git commands
+initialize git repo
+git init / git clone
+
+add files to staging area:
+git add <filename>
+ or
+git add .
+
+commit changes from staging area to local repo:
+git commit -m "first commit"
+
+to create a branch:
+git branch br1
+to get list of branches:
+git branch
+to switch to another branch:
+git checkout br1
+
+git merge br1
+
+git remote add origin "<remote-url>" 
+git remote set-url origin "<remote-url>"
+git remote -v: to check current origin.
+
+git push origin master
+
+git pull origin master
+
+git clone <remote-url>
+
+git-ignore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+

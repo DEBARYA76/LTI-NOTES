@@ -1,0 +1,79 @@
+Maven is a build tool.
+
+--Building an application.
+--Provides the appropriate project structure based on the archetype selection.
+-- Maven is based on POM(Project Object Model) file. This POM helps you manage(download and add it in the build path automatically) dependencies(jar) and you don't have to manually download and add jars inthe build path.
+
+From where the jars will be downloaded??
+Maven download jars(dependencies) from repositries:
+Maven has three repositories:
+--Local Repository : c:\Users\10663655\.m2\repository
+--Central Repository: this is on web: https://search.maven.org/
+                       https://repo1.maven.org/maven2/
+--Remote Repository: 
+
+You can also serach repository in the maven's official site 
+https://mvnrepository.com/
+
+When you add the dependency script in the POM.xml file and save your application,
+Maven first look for that dependency in the local repo i.e. ".m2\repository". If not found local repo, it goes to central repo
+i.e. search.maven.org and store the jar in the local repo for future use.
+
+There are three built-in build lifecycles: 
+1.default: The default lifecycle handles your project deployment.
+
+2.clean: the clean lifecycle handles project cleaning. It cleans the target directory(i.e. your output directory).
+
+3.site: the site lifecycle handles the creation of your project's site documentation.
+
+Build phases: Each of these build lifecycles is defined by a different list of build phases, wherein a build phase represents a stage in the lifecycle.
+
+Default life cycle consists of 23 build
+phases. But out of 23 only 7 build phase you need to remember:
+
+-validate - validate the project is correct and all necessary information is available
+-compile - compile the source code of the project
+-test - test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+-package - take the compiled code and package it in its distributable format, such as a JAR.
+-verify - run any checks on results of integration tests to ensure quality criteria are met
+-install - install the package into the local repository, for use as a dependency in other projects locally
+-deploy - done in the build environment, copies the final package to the remote repository for sharing with other developers and projects.
+
+Each build phase consists of various maven goals.
+Goals are bound to build phases.
+if build phase is compile, maven goal is compile:compile.
+
+Clean life cycle has 3 build phase: pre-clean,clean,post-clean.
+mvn clean
+
+Site life cycle has 4 phases: pre-site,site,post-site,site-deploye
+mvn site
+
+Maven Project can be created:
+1. using eclipse.
+
+2. using maven commands at command line.
+Environment variable(System Variable):
+  maven_home: D:\apache-maven-3.6.3        New
+  java_home: C:\Program Files\Java\jdk1.8.0_162  New
+  path:<java-path>;%maven_home%\bin              Edit
+  path:C:\Program Files\Java\jdk1.8.0_162\bin    Edit
+  classpath:C:\Program Files\Java\jdk1.8.0_162\lib;.;  New
+            OR
+  path:<java-path>;D:\apache-maven-3.6.3\bin
+
+
+Maven Project archetype parameters:
+GroupId: com.lti  (the package under which the project will be created)
+ArtifactId: It is the name of the Project.
+Version: This is the version of the project
+Packaging: for standalone app(.jar), for web app(.war)
+
+
+maven-archetype-quickstart: standalone app (jar)
+maven-archetype-webapp: web app (war)
+
+mvn archetype:generate -DgroupId=com.lti -DartifactId=maven-cmd-banking -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false.
+
+to execute:
+mvn exec:java -Dexec.mainClass=com.lti.App

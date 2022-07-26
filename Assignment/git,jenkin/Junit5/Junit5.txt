@@ -1,0 +1,135 @@
+Unit Testing:
+A unit test is a piece of code written by developers to test any functionality.
+
+System/Class under Test: class which you want to test.
+Method under Test: method to be tested
+
+Testing is all about checking expected result and obtained result.
+
+Readable
+Reliable
+Indepenent
+
+Java Unit Testing: JUnit
+
+JUnit is an open source framework to write and run repeatable tests.
+used to test a piece of java code
+Runner determines the tests, executes the tests and generate report.
+validates expected results with the actual results. : assertions
+
+1997--->2000(junit.org)---->2006(JUnit4)---->2017(JUnit5)
+
+JUnit4: 
+A single fat jar ( issue of separation of concerns)
+No flexible API
+No Java 8 features
+
+JUnit5:
+multiple small jars
+
+Junit5 components:
+JUnit platform+JUnit Jupitor+JUnit Vintage
+
+Assertions in JUnit5:
+validates the expected output with the actual output.
+Assertions are static methods.
+JUnit5 Assertions supports java 8 features like lambda expressions, stream etc.
+
+
+Test Instance lifecycle
+@TestInstance annotation: used to change the lifecycle behavior of test class.
+
+This annotation has two modes:
+1. @TestInstance(Lifecycle.PER_METHOD):
+   JUnit creates a new instance(object) of test class before executing 
+   each test method.
+2. @TestInstance(Lifecycle.PER_CLASS):
+   JUnit creates a new instance(object) of test class only once.
+
+life cycle hooks:
+- Constructor
+- methods annotated with:
+  - @BeforeAll: must be used on static method, it is called before any method, even
+                before constructor. e.g: database connection, start server etc)
+
+  - @AfterAll: must be used on static method, it is called at the end of all @Test
+               and other life cycle methods.e.g: clean up resources, stop server etc.)
+
+  - @BeforeEach: will execute before running a method.
+  - @AfterEach: will execute after running a method.
+
+   PER_METHOD
+   @BeforeAll->Constructor->@BeforeEach->@Test->@AfterEach->@AfterAll
+   PER_CLASS
+   Constructor->@BeforeAll->@BeforeEach->@Test->@AfterEach->@AfterAll
+
+Parameterized Test: allow you to run same test for different type of parameters.
+@ParameterizedTest: junit-jupitor-params.jar
+  In order to pass parameters, you need to provide a source.
+Source: is a collection different arguments.
+
+Type of sources:
+1. @ValueSource: pass different values in the form of an array.
+2. @NullSource: pass null values
+3. @EmptySource: pass empty values
+4. @NullAndEmptyCourse: pass null and empty values
+5. @EnumSource: pass Enum constants
+6. @MethodSource: pass different values from a method
+7. @CsvSource: comma separated values
+8. @CsvFileSource: external csv files (from classpath)
+
+{"1","2"}: 2 arguments
+{"1","'2','3'"}:2 arguments
+{"q",''"}: 2 arguments: "q" and ""
+{"q","}: 2 arguments: "q" and null 
+
+@EnumSource:
+name: you can specify which constants to be used
+mode: 
+- exclude: exclude names from enum constant pool
+- match_all: takes the regular expression and passes only constant that satisfy the
+             regular expression
+
+@MethodSource: specify a static factory method as a value source
+it could return Stream,Iterator, Iterable or array etc.
+
+Aruguments: is an interface that provides access to an array of objects
+
+(Employee,Account) getInteger(){
+
+}
+
+RepeatedTests:
+to repeat a test by specified number of times.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

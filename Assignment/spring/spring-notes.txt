@@ -1,0 +1,44 @@
+Spring is a Java framework.
+Spring is a framework of framework.
+
+Spring modules:
+Spring core: IoC(Inversion of control) 
+             and DI(Dependency injection)
+Inversion of control (IoC) is a programming principle.
+Dependency injection is a design pattern in which an object or 
+function receives other objects or functions that it depends on. 
+
+Spring Container: responsible for creating a bean(object).
+The Spring container is at the core of the Spring Framework. 
+The container will create the objects, wire them together, 
+configure them, and manage their complete life cycle from 
+creation till destruction. The Spring container uses DI to 
+manage the components that make up an application.
+The two containers are namely,
+BeanFactory(I) – Available in org.springframework.beans.factory package.
+ApplicationContext(I) – Available in org.springframework.context package.
+
+
+spring-core
+spring-context
+
+DI:
+-XML based configuration
+-Annotation based configuration
+-Java based configuration
+
+In spring, everything is a POJO class.
+
+Spring core
+Spring JDBC
+Spring MVC App
+Spring MVC Web
+Spring RESTful Services
+Spring Data JPA (Spring Boot)
+Spring Security
+
+
+
+
+
+

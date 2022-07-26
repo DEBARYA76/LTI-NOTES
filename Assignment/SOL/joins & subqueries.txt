@@ -1,0 +1,17 @@
+1.Display department name and number of employees in the department.
+2.Display job title, employee ID, number of days between ending date and starting 
+3.Display department name and manager first name.
+4.Display department name, manager name, and city.
+5.Display country name, city, and department name.
+6.Display job title, department name, employee last name, starting date for all jobs from 2000 to 2005.
+7.Display details of jobs that were done by any employee who is currently drawing more than 15000 of salary.
+8.Display department name, manager name, and salary of the manager for all managers whose experience is more than 5 years.
+9.Display employee name, job title for the jobs employee did in the past where the job was done less than six months.
+10.Display employee name and country in which he is working.
+
+11.Write a query to display all the information of the employees who does not work in those departments where some employees works whose manager id within the range 100 and 200.
+12.Write a query to display all the information for those employees whose id is any id who earn the second highest salary.
+13.Display the employee name( first name and last name ), employee id, and job title for all employees whose department location is Toronto.
+14.Write a query to display the employee number, name( first name and last name ) and job title for all employees whose salary is more than any average salary of any department.
+15. Display employee details who have joined most recently.
+16. Display employee details who have joined most recently in each department.

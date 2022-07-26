@@ -1,0 +1,72 @@
+Student Information System
+
+Entity/Model/Class:
+1. Student (rollNo,name,dateOfBirth,lastQualification,phoneNo,email,address)
+2. Course (courseId,courseName,duration,fee,eligibility)
+3. Registration(registrationNo,registrationDate,courseId,rollNo)
+
+Student:
+-- add a new Student (Register/Sign-up a student)
+-- update a Student ( update profile)
+-- register for a course
+
+Admin:
+-- add a new course
+-- update a course
+
+abstract class Course{
+}
+
+class DegreeCourse extends Course{
+}
+
+class DiplomaCourse extends Course{
+}
+
+class ProfessionalCourse extends Course{
+}
+
+
+abstract class Phone{
+}
+
+class LandLinePhone extends Phone{
+}
+
+class CordLessPhone extends LandLinePhone{
+}
+
+class MobilePhone extends CordLessPhone{
+}
+
+class SmartPhone extends MobilePhone{
+}
+
+
+ArrayList:
+internally creates an array.
+default capacity=10 
+maintains insertion order.
+duplicates allowed.
+search is faster O(n)
+access O(1)
+
+LinkedList(DLL):
+good for insert/update/delete operation
+the elements are not stored in contiguous locations 
+Internally, the LinkedList is implemented using the doubly linked list data structure.
+
+Set: a Set achieves uniqueness internally through HashMap.
+
+HashSet:
+does not manintain any order
+add(), remove() and contains() : O(1)
+internally uses HashMap
+
+TreeSet:
+O(logn)
+internally uses TreeMap
+
+
+
+

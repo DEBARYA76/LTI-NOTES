@@ -1,0 +1,24 @@
+Requirements of the Project:
+1. Customer Registration
+2. Customer Login
+3.............
+
+Entities:
+1. Customer
+2. .......
+
+E-R Diagram
+
+Database Schema:
+1. Customer
+2. Account
+3.........
+
+Project Flow:
+Home
+ - Register
+ - Login
+ - .....
+
+
+
