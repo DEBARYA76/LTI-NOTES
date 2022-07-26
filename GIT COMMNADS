@@ -1,0 +1,197 @@
+
+debar@Debarya MINGW64 ~
+$ pwd
+
+debar@Debarya MINGW64 ~
+$ cd "D:\git_repo\LOCALREPO"
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git config --global user.name "DEBARYA76"
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git config --global user.email "debaryapal110@gmail.com"
+
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git init
+Initialized empty Git repository in D:/git_repo/LOCALREPO/.git/
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ notepad file1.txt
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git status
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git add file1.txt
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git status
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git commit -m "Added file1.txt"
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git remote add origin "https://github.com/DEBARYA76/get1023_repo.git"
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git push origin master
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ notepad file2.txt
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ notepad file3.txt
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git status
+
+
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git add .
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git status
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git commit -m "2 files commiiteed"
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git log
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git diff --staged
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ ls
+
+file1.txt  file2.txt  file3.txt
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git branch branch1
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git checkout branch1
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (branch1)
+$ ls
+file1.txt  file2.txt  file3.txt
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (branch1)
+$ notepad file4branch1.txt
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (branch1)
+$ git add .
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (branch1)
+$ git commit -m "file5 added in branch1"
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (branch1)
+$ git checkout master
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ ls
+file1.txt  file2.txt  file3.txt
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git merge branch1
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ ls
+file1.txt  file2.txt  file3.txt  file4branch1.txt
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git diff master branch1
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ notepad file4.txt
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git diff master branch1
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git add .
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git diff master branch1
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git commit -m "added4 in master"
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git diff master branch1
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ ls
+file1.txt  file2.txt  file3.txt  file4.txt  file4branch1.txt
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (branch1)
+$ ls
+file1.txt  file2.txt  file3.txt  file4branch1.txt
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (branch1)
+$ git rebase
+
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (branch1)
+$ git rebase master
+Successfully rebased and updated refs/heads/branch1.
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (branch1)
+$ ls
+file1.txt  file2.txt  file3.txt  file4.txt  file4branch1.txt
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (branch1)
+$ git checkout master
+Switched to branch 'master'
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git push origin
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git push origin master
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git pull origin
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ ls
+file1.txt  file2.txt  file3.txt  file4.txt  file4branch1.txt
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ git pull origin master
+
+
+debar@Debarya MINGW64 /d/git_repo/LOCALREPO (master)
+$ ls
+'file 5.txt'   file1.txt   file2.txt   file3.txt   file4.txt   file4branch1.txt
+
+debar@Debarya MINGW64 ~
+$ cd "D:\git_repo\localrepo1"
+
+debar@Debarya MINGW64 /d/git_repo/localrepo1 (master)
+$ git clone "https://github.com/DEBARYA76/LTI_2022_training.git"
+
+
+debar@Debarya MINGW64 /d/git_repo/localrepo1 (master)
+$ cd LTI_2022_training/

@@ -1,0 +1,29 @@
+mvn -v
+
+
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+mvn archetype:generate -DgroupId=com.lti.cld -DartifactId=OnlineExam -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4  -DinteractiveMode=false
+
+
+mvn package
+
+
+
+mvn exec:java -Dexec.mainClass=com.lti.clg.App
+
+
+mvn site
+
+
+
+
+java -jar jenkins.war --httpPort-9191
+
+
+
+
+2e8d6b6b7844487d9fa3a635ac2e186f
+
+

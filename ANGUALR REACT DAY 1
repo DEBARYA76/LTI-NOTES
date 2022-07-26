@@ -1,0 +1,42 @@
+npm install -g @angular/cli
+
+
+ng new firstApp
+cd firstApp
+ng serve
+
+ng g class user
+
+ng g m hr
+ng g m app-routing
+
+ng g c login --skip-tests
+ng g c dashboard --skip-tests
+ng g c errorpage --skip-tests
+
+ng g s user --skip-tests
+
+ng g class post --skip-tests
+
+
+
+npm install --global yarn
+yarn --version
+
+GIT TOKEN
+;
+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
+
+
+https://github.com/bhaskar2311/Get1023.git4
+
+
+
+D:\git_repo\LOCALREPO
+
+https://github.com/DEBARYA76/get1023_repo.git
+
+
+D:\git_repo\localrepo1
+
+https://github.com/DEBARYA76/LTI_2022_training.git
